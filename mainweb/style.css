@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "regular";
+    src: url("/fonts/Minion3-Regular.ttf");
+}
+@font-face {
+    font-family: "displayregular";
+    src: url("/fonts/Minion3Display-Regular.ttf");
+}
+@font-face {
+    font-family: "captionregular";
+    src: url("/fonts/Minion3Caption-Regular");
+}
+@font-face {
+    font-family: "subheadregular";
+    src: url("/fonts/Minion3Subhead-Regular.ttf");
+}
+
+@font-face {
+    font-family: "italic";
+    src: url("/fonts/Minion3-Italic.ttf");
+}
+@font-face {
+    font-family: "displayitalic";
+    src: url("/fonts/Minion3Display-Italic.ttf");
+}
+@font-face {
+    font-family: "captionitalic";
+    src: url("/fonts/Minion3Caption-Italic.ttf");
+}
+@font-face {
+    font-family: "subheaditalic";
+    src: url("/fonts/Minion3Subhead-Italic.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+:root {
+    --base-clr: #a5a76c;
+    --txt-clr: #080808 ;
+}
+
+.darkmode {
+    --base-clr: #0a0a0a;
+    --txt-clr: #b19d66;
+}
+
+#theme-switch {
+    border: 0;
+    padding: 0;
+    background: none;
+}
+
+#theme-switch img:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child{
+    display: block;
+}
+
+#headerdm, .footer-img, .introheader {
+    filter: invert(87%) sepia(3%) saturate(5113%) hue-rotate(3deg) brightness(72%) contrast(92%);
+}
+
+#headerwm,  .footer-img, .introheader {
+    filter: invert(0%) sepia(89%) saturate(7494%) hue-rotate(216deg) brightness(69%) contrast(94%);
+}
+
+.aboutheader {
+    padding: 0;
+    margin: -40px 0 -35px;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: var(--base-clr);
+    line-height: 30px;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+
+fieldset p {
+    font-family: "italic";
+    color: var(--txt-clr);
+    text-align: justify;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: var(--txt-clr);
+    font-size: 18px;
+    font-family: "regular";
+    margin: 0 0 20px 0px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+footer nav {
+    padding-top: 15px;
+    justify-content: left;
+}
+footer nav a {
+    margin: 10px 10px 0 0;
+}
+
+legend {
+    background: var();
+    color: var();
+    font-family: "medium";
+    font-size: 30px;
+    padding: 0px 5px;
+    font-family: "captionitalic";
+}
+
+fieldset {
+    background: var();
+    border: 0;
+    border-radius: 5px;
+    color: var(--txt-clr);
+    padding: 0 10px;
+}
+
+.introspections fieldset, .about fieldset{
+    border: 1.5px;
+    border-style: solid;
+    border-radius: 2.5px;
+    color: var(--txt-clr);
+    padding: 0 10px;
+}
+
+a {
+    color: var(--txt-clr);
+    font-family: "semibolditalic";
+    text-decoration: none;
+}
+
+.img-header img {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.introheader, .footer-img, .intheader {
+    display: flex;
+    justify-content: center;
+}
+
+.introheader img {
+    width: 60%;
+    height: 85%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.intheader img {
+    width: 60%;
+    height: 85%;
+    margin: 0px;
+    padding: 0 0 20px;
+}
+
+.footer-img img {
+    width: 73%;
+    height: 85%;
+    margin: 0px;
+    padding: 0;
+}
+
+.grid1 {
+    align-items: start;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+}
+
+.grid1 legend{
+    align-items: start;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+    font-family: "displayregular";
+}
+
+
+.introspections, .about {
+    align-items: start;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    padding-top: 5px;
+}
+
+.introspections a {
+    font-family: "subheadregular";
+    font-size: 20px;
+}
+
+.introspections p {
+    font-family: "subheaditalic";
+    font-size: 15px;
+    margin: 0;
+    text-indent: 15px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}   
+
+ul {
+    list-style: none;
+    padding: 0 0 0 30px;
+    color: var(--txt-clr);
+}
+
+.state {
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+
+.state p{
+    padding: 5px 5px 5px 10px;
+    font-family: "regular";
+}
+
+.about-info p{
+    color: var(--txt-clr);
+    font-family: "displayregular";
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 15px 0 15px;
+}
+
+.grid2 {
+    align-items: start;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid2 { grid-template-columns: 1fr; }
+}
