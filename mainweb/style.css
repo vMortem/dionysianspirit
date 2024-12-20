@@ -320,7 +320,7 @@ ul {
 
 .footerinfo a{
     justify-content: center;
-    font-family: "bolditalic";
+    font-family: "regular";
     transition: padding 300ms;
 }
 
