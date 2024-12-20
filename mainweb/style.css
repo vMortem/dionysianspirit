@@ -206,7 +206,7 @@ a {
 	width: 65%;
 	height: 85%;
 	margin: 0px;
-	padding: 0 0 20px;
+	padding: 12px 0 20px 0;
 }
 
 .intfooter img {
@@ -227,7 +227,6 @@ a {
 	display: grid;
 	grid-gap: 15px;
 	grid-template-columns: 1fr;
-	padding-top: 10px;
 }
 
 .grid1 legend {
@@ -239,6 +238,15 @@ a {
 	font-family: "displayregular";
 }
 
+.indexlegend {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "subheadregular";
+	font-size: 28px;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
 
 .introspections,
 .about {
@@ -306,6 +314,10 @@ ul {
     padding-bottom: 10px;
 }
 
+.footerinfo {
+	padding: 20px 0 0 0;
+}
+
 .footerinfo a{
     justify-content: center;
     font-family: "bolditalic";
@@ -313,7 +325,7 @@ ul {
 }
 
 .footerinfo a:hover {
-    border: 2px solid;
+    border: 1.8px solid;
     border-radius: 2px;
     padding: 3px 10px 3px 10px;
 }
