@@ -211,8 +211,8 @@ a {
 
 .intfooter img {
 	width: 100%;
-	margin: 0px;
-	padding: 40px 0 0 0;
+	margin: 0;
+	padding: 40px 0 20px 0;
 }
 
 .aboutheader img {
@@ -298,6 +298,24 @@ ul {
 	grid-gap: 15px;
 	grid-template-columns: 1fr 1fr;
 	padding-top: 15px;
+}
+
+.date{
+    display: inline-block;
+    min-width: 65px;
+    padding-bottom: 10px;
+}
+
+.footerinfo a{
+    justify-content: center;
+    font-family: "bolditalic";
+    transition: padding 300ms;
+}
+
+.footerinfo a:hover {
+    border: 2px solid;
+    border-radius: 2px;
+    padding: 3px 10px 3px 10px;
 }
 
 @media only screen and (max-width: 600px) {
