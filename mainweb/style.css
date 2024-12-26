@@ -314,6 +314,12 @@ ul {
     padding-bottom: 10px;
 }
 
+.quote p {
+    font-family: "italic";
+    font-size: 16px;
+    margin: 18px 30px 20px 28px;
+}
+
 .footerinfo {
 	padding: 20px 0 0 0;
 }
